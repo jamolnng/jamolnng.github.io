@@ -28,3 +28,9 @@ author:
 version:             1.0.0
 github:
   repo:              https://github.com/jamolnng
+
+# Navbar
+pages_list:       
+  About: '/about'
+  Projects: '/projects'
+  Feed: '/atom.xml'
