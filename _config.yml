@@ -5,9 +5,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Jesse Laning
+tagline:             Programmer, game developer, walrus
+url:                 
 paginate:            1
 baseurl:             ""
 
@@ -20,11 +20,11 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Jesse Laning
+  url:               https://twitter.com/jamolnng
+  email:             contact@jlaning.com
 
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/jamolnng
