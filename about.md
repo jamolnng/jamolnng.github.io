@@ -12,7 +12,7 @@ It is very easy for me to pick up a new programming language. Other languages I 
 
 [Github](https://github.com/jamolnng) for you programmers
 
-[Twitter](https://twitter.com/jamolnng) for you programmers
+[Twitter](https://twitter.com/jamolnng) for you tweeters
 
 [Stackoverflow](http://stackoverflow.com/users/1561291/jamolnng) for those who like to copy and paste
 
