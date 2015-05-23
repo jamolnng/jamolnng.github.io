@@ -7,6 +7,8 @@ I am finally not running toaster for a computer! This means I can do development
 
 Pictures and parts:
 
+<img src="https://cdn.pcpartpicker.com/static/forever/images/userbuild/145721.50d55f4746316ba5cd7d64f99ab20044.9fe709b9429f1d0826a3260f2e8b5cdb.1600.jpg" />
+
 [PCPartPicker part list](http://pcpartpicker.com/p/p9txmG) / [Price breakdown by merchant](http://pcpartpicker.com/p/p9txmG/by_merchant/)
 
 Type|Item|Price
