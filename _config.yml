@@ -8,8 +8,8 @@ relative_permalinks: true
 title:               Jesse Laning
 tagline:             Programmer, game developer, walrus
 url:                 
-paginate:            1
-baseurl:             "jlaning.com"
+paginate:            2
+baseurl:             ""
 
 # Assets
 #
