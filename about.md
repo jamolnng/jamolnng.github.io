@@ -4,6 +4,7 @@ title: About
 ---
 
 Programmer for eight years. While not having been formally taught, I have a lot of experience. The primary languages I program in and am very proficient at are:
+
 * C++
 * C#
 * Java
