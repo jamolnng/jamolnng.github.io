@@ -7,7 +7,7 @@ relative_permalinks: true
 # Setup
 title:               Jesse Laning
 tagline:             Programmer, game developer, walrus
-url:                 
+url:                 http://jlaning.com
 paginate:            2
 baseurl:             ""
 
