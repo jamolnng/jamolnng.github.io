@@ -102,7 +102,8 @@ void main(void)
 	float c = cos(es_in.angle * v.y);
 	float xnew = v.x * c - v.z * s;
 	float znew = v.x * s + v.z * c;
-	//We apply the model view projection matrix here so we can rotate each vertex output by the tessellation engine based on its y coordinate
+	//We apply the model view projection matrix here so we can rotate each
+	//vertex output by the tessellation engine based on its y coordinate
 	gl_Position = vec4(xnew, v.y, znew, 1) * es_in.mvp;
 }
 {% endhighlight %}
