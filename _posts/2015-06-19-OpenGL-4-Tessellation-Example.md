@@ -7,8 +7,12 @@ With a new, and not piece of shit, computer I decided it would be a good time to
 
 I am nowhere near an expert with OpenGL so here is an armature's take on tessellation. This is most likely not a good tutorial, I am just showing the basic shader code.
 
+### So what is tessellation?
+Tessellation is a stage in the OpenGL rendering pipeline that takes patches of vertex data and subdivides it into smaller primitives. Two shaders govern tessellation. The tessellation control shader governs how much tessellation to do while the tessellation evaluation shader takes the output of the tessellation control shader and computes the values for each vertex. Tessellation can be used for, but not limited to, level of detail or LOD in objects displayed on the screen. This means while a mountain in the background may not be tessellated at all, the closer you get the more tessellation that might be done so it doesn't look all jagged and rough.
 
-Vertex Shader:
+In this shader code it uses an angle to rotate each vertex output by the tessellation engine to provide a smooth edge and keeps faces from overlapping
+
+### Vertex Shader:
 {% highlight glsl %}
 #version 430 core
 
@@ -33,7 +37,7 @@ void main(void)
 }
 {% endhighlight %}
 
-Tessellation Control Shader:
+### Tessellation Control Shader:
 {% highlight glsl %}
 #version 430 core
 
@@ -59,7 +63,7 @@ void main(void)
 	cs_out[gl_InvocationID].colors = cs_in[gl_InvocationID].colors;
 	if (gl_InvocationID == 0)
 	{
-		//lets create a lot of vertices
+		//lets create a lot of vertices, this is essentially your LOD
 		gl_TessLevelInner[0] = 1000.0;
 		gl_TessLevelOuter[0] = 1000.0;
 		gl_TessLevelOuter[1] = 1000.0;
@@ -69,7 +73,7 @@ void main(void)
 }
 {% endhighlight %}
 
-Tessellation Evaluation Shader:
+### Tessellation Evaluation Shader:
 {% highlight glsl %}
 #version 430 core
 
@@ -93,16 +97,17 @@ void main(void)
 				   gl_TessCoord.y * gl_in[1].gl_Position + 
 				   gl_TessCoord.z * gl_in[2].gl_Position);
 	vec3 v = gl_Position.xyz;
-	//rotate each vertex based on its vertical position
+	//rotate each vertex based on its y coordinate, the closer to 0 the less rotation
 	float s = sin(es_in.angle * v.y);
 	float c = cos(es_in.angle * v.y);
 	float xnew = v.x * c - v.z * s;
 	float znew = v.x * s + v.z * c;
+	//We apply the model view projection matrix here so we can rotate each vertex output by the tessellation engine based on its y coordinate
 	gl_Position = vec4(xnew, v.y, znew, 1) * es_in.mvp;
 }
 {% endhighlight %}
 
-Fragment Shader:
+### Fragment Shader:
 {% highlight glsl %}#version 430 core
 
 out vec4 color;
