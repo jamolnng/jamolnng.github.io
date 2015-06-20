@@ -5,46 +5,115 @@ title: OpenGL 4 Tessellation Example
 
 With a new, and not piece of shit, computer I decided it would be a good time to start moving into modern OpenGL. I bought the [OpenGL SuperBible Sixth Edition](http://www.openglsuperbible.com/) last winter and hadn't really had a chance to read it until I got my new computer. I am basically throwing everything I know about OpenGL out the window because all of it relates to OpenGL 2.1 which is pretty outdated at this point. One cool feature I found, and why I decided to write this blog about me actually doing something, is the tessellation engine that comes with OpenGL 4. I decided to start learning shaders and came up with this cool example of the OpenGL tessellation engine.
 
-I am nowhere near an expert with OpenGL so here is an armature's take on tessellation.
+I am nowhere near an expert with OpenGL so here is an armature's take on tessellation. This is most likely not a good tutorial, I am just showing the basic shader code.
 
-testasdjklaskj;lasfdklasdkl
+
+Vertex Shader:
 {% highlight glsl %}
 #version 430 core
 
 layout (location = 0) in vec3 vertex;
 layout (location = 1) in vec4 col;
 uniform mat4 mvp;
-uniform float time;
-uniform float uc;
+uniform float angle;
 
 out VS_OUT
 {
 	vec4 colors;
-	float time;
+	float angle;
 	mat4 mvp;
 } vs_out;
 
 void main(void)
 {
-	vs_out.time = time;
+	vs_out.angle = angle;
 	vs_out.colors = col;
 	vs_out.mvp = mvp;
 	gl_Position = vec4(vertex, 1);
-	if(gl_VertexID < 3) vs_out.colors = vec4(1, 0, 1, 1);
-	else if(gl_VertexID < 6) vs_out.colors = vec4(1, 1, 0, 1);
-	else if(gl_VertexID < 9 && gl_VertexID > 5) vs_out.colors = vec4(1, 0, 0, 1);
-	else if(gl_VertexID < 12) vs_out.colors = vec4(1, 1, 0, 1);
-	else if(gl_VertexID < 15) vs_out.colors = vec4(1, 0, 1, 1);
-	else if(gl_VertexID < 21 && gl_VertexID > 17) vs_out.colors = vec4(0, 1, 0, 1);
-	else if(gl_VertexID < 21 && gl_VertexID > 14) vs_out.colors = vec4(1, 0, 0, 1);
-	else if(gl_VertexID < 27) vs_out.colors = vec4(0, 1, 1, 1);
-	else if(gl_VertexID < 33) vs_out.colors = vec4(1, 1, 1, 1);
-	else vs_out.colors = vec4(0, 1, 0, 1);
-	
-	if(uc < 1.0)
+	vs_out.colors = vec4(0, 1, 0, 1);
+}
+{% endhighlight %}
+
+Tessellation Control Shader:
+{% highlight glsl %}
+#version 430 core
+
+layout (vertices = 3) out;
+
+in VS_OUT
+{
+	vec4 colors;
+	float angle;
+	mat4 mvp;
+} cs_in[];
+out CS_OUT
+{
+	vec4 colors;
+	float angle;
+	mat4 mvp;
+} cs_out[];
+
+void main(void)
+{
+	cs_out[gl_InvocationID].mvp = cs_in[gl_InvocationID].mvp;
+	cs_out[gl_InvocationID].angle = cs_in[gl_InvocationID].angle;
+	cs_out[gl_InvocationID].colors = cs_in[gl_InvocationID].colors;
+	if (gl_InvocationID == 0)
 	{
-		vs_out.colors = vec4(0, 0, 0, 1);
+		//lets create a lot of vertices
+		gl_TessLevelInner[0] = 1000.0;
+		gl_TessLevelOuter[0] = 1000.0;
+		gl_TessLevelOuter[1] = 1000.0;
+		gl_TessLevelOuter[2] = 1000.0;
 	}
+	gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position;
+}
+{% endhighlight %}
+
+Tessellation Evaluation Shader:
+{% highlight glsl %}
+#version 430 core
+
+layout (triangles, equal_spacing, ccw) in;
+
+in CS_OUT
+{
+	vec4 colors;
+	float angle;
+	mat4 mvp;
+} es_in;
+out ES_OUT
+{
+	vec4 colors;
+} es_out;
+
+void main(void)
+{
+	es_out.colors = es_in.colors;
+	gl_Position = (gl_TessCoord.x * gl_in[0].gl_Position +
+				   gl_TessCoord.y * gl_in[1].gl_Position + 
+				   gl_TessCoord.z * gl_in[2].gl_Position);
+	vec3 v = gl_Position.xyz;
+	float s = sin(es_in.angle * v.y);
+	float c = cos(es_in.angle * v.y);
+	float xnew = v.x * c - v.z * s;
+	float znew = v.x * s + v.z * c;
+	gl_Position = vec4(xnew, v.y, znew, 1) * es_in.mvp;
+}
+{% endhighlight %}
+
+Fragment Shader:
+{% highlight glsl %}#version 430 core
+
+out vec4 color;
+in ES_OUT
+{
+	vec4 colors;
+} fs_in;
+
+void main(void)
+{
+	color = fs_in.colors;
 }
 {% endhighlight %}
 
