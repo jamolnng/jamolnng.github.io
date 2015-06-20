@@ -30,7 +30,6 @@ void main(void)
 	vs_out.colors = col;
 	vs_out.mvp = mvp;
 	gl_Position = vec4(vertex, 1);
-	vs_out.colors = vec4(0, 1, 0, 1);
 }
 {% endhighlight %}
 
@@ -94,6 +93,7 @@ void main(void)
 				   gl_TessCoord.y * gl_in[1].gl_Position + 
 				   gl_TessCoord.z * gl_in[2].gl_Position);
 	vec3 v = gl_Position.xyz;
+	//rotate each vertex based on its vertical position
 	float s = sin(es_in.angle * v.y);
 	float c = cos(es_in.angle * v.y);
 	float xnew = v.x * c - v.z * s;
