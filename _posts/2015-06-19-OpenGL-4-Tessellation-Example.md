@@ -5,9 +5,8 @@ title: More Tessellation Fun
 
 Now it tesselates based on its amount of rotation.
 
-<img src="http://i.imgur.com/wWE2XYL.gif" title="tessellation" />
+<center><img src="http://i.imgur.com/wWE2XYL.gif" title="tessellation" />
 <br/>
-<br/>
-<img src="http://i.imgur.com/h6vLz9I.gif" title="tessellation" />
+<img src="http://i.imgur.com/h6vLz9I.gif" title="tessellation" width="50%" height="50%" /></cennter>
 
 {% include twitter_plug.html %}
