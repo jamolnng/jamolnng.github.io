@@ -21,6 +21,7 @@ This fall I start school at K-State University for physics and computer science.
 
 [Stackoverflow](http://stackoverflow.com/users/1561291/jamolnng) for those who like to copy and paste
 <br/>
+<br/>
 <a href="mailto:contact@jlaning.com">Contact Email</a>
 
 Under construction.
