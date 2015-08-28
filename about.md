@@ -15,7 +15,7 @@ While I enjoy making video games the real fun for me is in the core engine stuff
 
 I am currently a student at K-State Universirty studying physics and computer science. My goal is to work on physics based graphics like lighting, shadows, and reflections to make games and other areas that require real time graphics to look as real as possible, but mostly games. I also like to do physics simulations with computers. One thing I was working on was a "game" called Gravity Boost that simulated the orbits of planets.
 
-If you want to know my programming history check out this blog post http://jlaning.com/2015/08/27/CIS-115-Blog-1/
+If you want to know my programming history check out <a href="http://jlaning.com/2015/08/27/CIS-115-Blog-1/">this blog post.</a>
 
 [Github](https://github.com/jamolnng) for you programmers
 
