@@ -4,7 +4,7 @@ title: Archive
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.archive %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
