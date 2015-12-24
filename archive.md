@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Archive
-baseurl: "/_archive/"
+paginate_path: "/archive/:num"
 ---
 
 <div class="posts">
