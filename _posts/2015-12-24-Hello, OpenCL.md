@@ -20,6 +20,7 @@ OpenCL is fast, especially using it on specifically designed hardware like GPUs.
 If you want to use OpenCL you need to make sure that the algorithm(s) that you have are inherently able to be parallel, if not then you will not see much, if any, performance gain from OpenCL.
 
 <br/><br/>
+
 Tutorial 1: Hello, OpenCL
 -------------------------
 
