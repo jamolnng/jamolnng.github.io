@@ -1,15 +1,8 @@
 ---
 layout: post
-title: Hello, OpenCL!
+title: Hello, OpenCL
+desc: 
 ---
-
-<head>
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@jamolnng" />
-<meta name="twitter:title" content="Hello, OpenCL!" />
-<meta name="twitter:description" content="Intro post to OpenCL" />
-<meta name="twitter:image" content="{{ site.url }}/public/assets/Hello, OpenCL/card.png" />
-</head>
 
 This is the beginning of what I plan to be a tutorial/introductory series to OpenCL using the C++ bindings.
 

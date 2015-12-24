@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<head>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@jamolnng" />
+	<meta name="twitter:title" content="{{ page.title }}" />
+	<meta name="twitter:description" content="{{ page.excerpt }}" />
+	<meta name="twitter:image" content="{{ site.url }}/public/assets/{{ page.title }}/card.png" />
+</head>
+
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
