@@ -6,9 +6,9 @@ relative_permalinks: true
 
 # Setup
 title:               Jesse Laning
-tagline:             Programmer, game developer, walrus
+tagline:             Physicist, Programmer, Walrus
 url:                 http://jlaning.com
-paginate:            2
+paginate:            5
 baseurl:             ""
 
 # Assets
@@ -21,8 +21,8 @@ sass:
 # About/contact
 author:
   name:              Jesse Laning
-  url:               https://twitter.com/jamolnng
-  email:             contact@jlaning.com
+  url:               http://jlaning.com/about
+  email:             jlaning@phys.ksu.edu
 
 # Custom vars
 version:             1.0.0
@@ -34,3 +34,4 @@ pages_list:
   About: '/about'
   Projects: '/projects'
   Feed: '/atom.xml'
+  Archive: '/archive'
