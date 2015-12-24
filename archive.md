@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Archive
+baseurl: "/_archive/"
 ---
 
 <div class="posts">
-  {% for post in site.archive %}
+  {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
