@@ -29,7 +29,7 @@ This is going to be my version of an introductory application that utilizes Open
 
 Before I continue I should tell you what system I am using and how I am compiling my code. I have an Intel i7-4790k processor and a Geforce GTX 980ti. I will be using the GPU on my 980ti to run all of the OpenCL code. I am compiling and testing my code with both Microsoft Visual Studio 2015 Community and MinGW's g++.
 
-{% highligh cpp %}
+{% highlight cpp %}
 int main(int narg, char* argv[])
 {
 	return 0;
