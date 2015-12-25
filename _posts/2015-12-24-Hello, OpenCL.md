@@ -20,10 +20,20 @@ OpenCL is fast, especially using it on specifically designed hardware like GPUs.
 If you want to use OpenCL you need to make sure that the algorithm(s) that you have are inherently able to be parallel, if not then you will not see much, if any, performance gain from OpenCL.
 
 <br/><br/>
+<br/><br/>
 
 Tutorial 1: Hello, OpenCL
 -------------------------
 
 This is going to be my version of an introductory application that utilizes OpenCL. The application is going to take two arrays of numbers and add them together and output them to another array.
+
+Before I continue I should tell you what system I am using and how I am compiling my code. I have an Intel i7-4790k processor and a Geforce GTX 980ti. I will be using the GPU on my 980ti to run all of the OpenCL code. I am compiling and testing my code with both Microsoft Visual Studio 2015 Community and MinGW's g++.
+
+{% highligh cpp %}
+int main(int narg, char* argv[])
+{
+	return 0;
+}
+{% endhighlight %}
 
 {% include twitter_plug.html %}
