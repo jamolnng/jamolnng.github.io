@@ -54,6 +54,15 @@ int main(int arg, char* args[])
 }
 {% endhighlight %}
 
+Now we need to create buffer pointers to store our arrays on our device. Also we create a cudaError_t to do help with a little error checking.
+
+{% highlight cpp %}
+int *buffer_A = 0;
+int *buffer_B = 0;
+int *buffer_C = 0;
+cudaError_t cudaStatus;
+{% endhighlight %}
+
 Next we need to get the device that our CUDA program is going to run on. Unlike OpenCL there are no CUDA contexts that you have to worry about.
 
 {% highlight cpp %}
@@ -64,15 +73,6 @@ if (cudaStatus != cudaSuccess)
 	std::cout << "No CUDA devices found!" << std::endl;
 	exit(1);
 }
-{% endhighlight %}
-
-Now we need to create buffer pointers to store our arrays on our device. Also we create a cudaError_t to do help with a little error checking.
-
-{% highlight cpp %}
-int *buffer_A = 0;
-int *buffer_B = 0;
-int *buffer_C = 0;
-cudaError_t cudaStatus;
 {% endhighlight %}
 
 Now because I want to have this code be as similar as possible to my OpenCL tutorials we get the CUDA device properties and print the name of the device we are using
