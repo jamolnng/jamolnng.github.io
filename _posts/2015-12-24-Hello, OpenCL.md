@@ -73,6 +73,11 @@ int main(int arg, char* args[])
 Now we need to create an OpenCL context to run our programs in. This is a straight forward and simple way to do it.
 
 {% highlight cpp %}
+//stl vector to store all of the available platforms
+std::vector<cl::Platform> platforms;
+//get all available platforms
+cl::Platform::get(&platforms);
+
 if (platforms.size() == 0)
 {
 	std::cout << "No OpenCL platforms found" << std::endl;//This means you do not have an OpenCL compatible platform on your system.
@@ -88,7 +93,7 @@ cl::Device device = devices[0];
 
 //This is just helpful to see what device and platform you are using.
 std::cout << "Using device: " << device.getInfo<CL_DEVICE_NAME>() << std::endl;
-std::cout << "Using platform: " << platforms[platNum].getInfo<CL_PLATFORM_NAME>() << std::endl;
+std::cout << "Using platform: " << platforms[0].getInfo<CL_PLATFORM_NAME>() << std::endl;
 
 //Finally create the OpenCL context from the device you have chosen.
 cl::Context context(device);
