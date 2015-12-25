@@ -120,7 +120,7 @@ if (program.build({ device }) != CL_SUCCESS)
 }
 {% endhighlight %}
 
-The source for the OpenCL program is:
+The source for our OpenCL program is:
 
 {% highlight cpp %}
 //simple_add.cl
@@ -130,5 +130,48 @@ void kernel simple_add(global const int* A, global const int* B, global int* C)
 }
 {% endhighlight %}
 
+After we compile out program we need to create a command queue to queue our task to run on the device we have selected. A command queue is pretty much exactly how it sounds, it sequentially executes commands on the OpenCL device. If you need multiple programs to run at one time you can have multiple command queues. For this we only need one.
+
+{% highlight cpp %}
+//Create command queue using our OpenCL context and device
+cl::CommandQueue queue(context, device, NULL, NULL);
+
+//Write our buffers that we are adding to our OpenCL device
+queue.enqueueWriteBuffer(buffer_A, CL_TRUE, 0, sizeof(int) * size, A);
+queue.enqueueWriteBuffer(buffer_B, CL_TRUE, 0, sizeof(int) * size, B);
+
+//Create our Kernel (basically what is the starting point for our OpenCL program)
+cl::Kernel simple_add(program, "simple_add");
+//Set our arguements for the kernel
+simple_add.setArg(0, buffer_A);
+simple_add.setArg(1, buffer_B);
+simple_add.setArg(2, buffer_C);
+
+//Make sure that our queue is done with all of its tasks before continuing
+queue.finish();
+{% endhighlight %}
+
+Finally we need to run our code and get the output
+
+{% highlight cpp %}
+//Create an event that we can use to wait for our program to finish running
+cl::Event e;
+//This runs our program, the ranges here are the offset, global, local ranges that our code runs in.
+queue.enqueueNDRangeKernel(simple_add, cl::NullRange, cl::NDRange(size), cl::NullRange, 0, &e);
+
+//Waits for our program to finish
+e.wait();
+//Reads the output written to our buffer into our final array
+queue.enqueueReadBuffer(buffer_C, CL_TRUE, 0, sizeof(int) * size, C);
+
+//prints the array
+std::cout << "Result:" << std::endl;
+for (int i = 0; i < size; i++)
+{
+	std::cout << A[i] << " + " << B[i] << " = " << C[i] << std::endl;
+}
+{% endhighlight %}
+
+This is your basic "Hello, World!" program for OpenCL. I tried to explain as much as I can but I am also just starting with OpenCL.
 
 {% include twitter_plug.html %}
