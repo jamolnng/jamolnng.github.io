@@ -180,5 +180,3 @@ for (int i = 0; i < size; i++)
 This is your basic "Hello, World!" program for OpenCL. I tried to explain as much as I can but I am also just starting with OpenCL.
 
 Sources for all of the tutorials can be found at the projects github [https://github.com/jamolnng/OpenCL-CUDA-Tutorials](https://github.com/jamolnng/OpenCL-CUDA-Tutorials)
-
-{% include twitter_plug.html %}

@@ -13,5 +13,3 @@ The project can be found on my [github](https://github.com/jamolnng/mmmm)
 A demo of all of this can be seen here in this [video](https://youtu.be/v4JX-m5XHcw)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v4JX-m5XHcw" frameborder="0" allowfullscreen></iframe>
-
-{% include twitter_plug.html %}
