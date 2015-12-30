@@ -6,3 +6,12 @@
   
 - slug: cpp
   name: C++
+  
+- slug: opengl
+  name: OpenGL
+  
+- slug: cuda
+  name: CUDA
+  
+- slug: unrealengine
+  name: Unreal Engine

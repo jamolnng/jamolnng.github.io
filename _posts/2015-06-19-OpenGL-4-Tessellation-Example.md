@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OpenGL 4 Tessellation Example
+tags: [opengl]
 ---
 
 With a new, and not piece of shit, computer I decided it would be a good time to start moving into modern OpenGL. I bought the [OpenGL SuperBible Sixth Edition](http://www.openglsuperbible.com/) last winter and hadn't really had a chance to read it until I got my new computer. I am basically throwing everything I know about OpenGL out the window because all of it relates to OpenGL 2.1 which is pretty outdated at this point. One cool feature I found, and why I decided to write this blog about me actually doing something, is the tessellation engine that comes with OpenGL 4. I decided to start learning shaders and came up with this cool example of the OpenGL tessellation engine.

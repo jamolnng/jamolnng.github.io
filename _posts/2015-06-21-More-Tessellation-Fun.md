@@ -1,6 +1,7 @@
 ---
 layout: post
 title: More Tessellation Fun
+tags: [opengl]
 ---
 
 Now it tesselates based on its amount of rotation.
