@@ -8,7 +8,7 @@ In this tutorial we are going to copy an image using OpenCL.
 
 Before we start make sure you download the PNG.h header available in the include and includes on the project's [GitHub page](https://github.com/jamolnng/OpenCL-CUDA-Tutorials) it in your project. We use this to load and save PNGs.
 <br/><br/>
-1) We need to create the OpenCL context. This is explained a bit more in depth in the first tutorial.
+<h4>1) We need to create the OpenCL context. This is explained a bit more in depth in the first tutorial.</h4>
 
 {% highlight cpp %}
 int main(int arg, char* args[])
@@ -29,7 +29,7 @@ int main(int arg, char* args[])
 	//...
 {% endhighlight %}
 <br/><br/>
-2) Now we need to load our image from file and into OpenCL
+<h4>2) Now we need to load our image from file and into OpenCL</h4>
 
 Loading our image is pretty simple. Lenna.png is available in the project files on the project's GitHub page.
 
@@ -61,7 +61,7 @@ CL_MEM_READ_ONLY says that the memory will not be modified by the OpenCL impleme
 
 CL_MEM_COPY_HOST_PTR is set so OpenCL copies the image data from the host to the OpenCL implementation
 <br/><br/>
-3) Create out output image
+<h4>3) Create out output image</h4>
 
 This is similar to creating the input image except we do not need to send any data to the OpenCL implementation
 
@@ -70,7 +70,7 @@ This is similar to creating the input image except we do not need to send any da
 cl::Image2D out(context, CL_MEM_WRITE_ONLY, format, w, h, 0, NULL);
 {% endhighlight %}
 <br/><br/>
-4) Create out kernel, this is explained in the first tutorial
+<h4>4) Create out kernel, this is explained in the first tutorial</h4>
 
 {% highlight cpp %}
 cl::Program::Sources sources;
@@ -92,7 +92,7 @@ kernelCopy.setArg(0, in);
 kernelCopy.setArg(1, out);
 {% endhighlight %}
 <br/><br/>
-5) Create command queue and execute our kernel
+<h4>5) Create command queue and execute our kernel</h4>
 
 {% highlight cpp %}
 //create command queue
@@ -121,7 +121,7 @@ void kernel copy(__read_only image2d_t in, __write_only image2d_t out)
 }
 {% endhighlight %}
 <br/><br/>
-6) Read our image back from the OpenCL implementation
+<h4>6) Read our image back from the OpenCL implementation</h4>
 
 {% highlight cpp %}
 //start and end coordinates for reading our image (I really do not like how the c++ wrapper does this)
