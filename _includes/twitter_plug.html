@@ -1,7 +1,7 @@
 <script>
 function twp()
 {
-	document.getElementById("twitterPlug").innerHTML = '<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=jamolnng" target="_blank"> Share on Twitter</a> or <a href="https://twitter.com/jamolnng"> follow me on Twitter</a>!'
+	document.getElementById("twitterPlug").innerHTML = '<a href="' + encodeURIComponent('https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=jamolnng') + '" target="_blank"> Share on Twitter</a> or <a href="https://twitter.com/intent/follow?screen_name=jamolnng&user_id=331509586"> follow me on Twitter</a>!'
 }
 </script>
 
