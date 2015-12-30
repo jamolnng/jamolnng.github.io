@@ -34,3 +34,4 @@ pages_list:
   About: '/about'
   Projects: '/projects'
   Feed: '/atom.xml'
+  OpenCL: '/OpenCL'
