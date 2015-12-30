@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello, CUD
+title: Hello, CUDA
 desc: 
 ---
 
