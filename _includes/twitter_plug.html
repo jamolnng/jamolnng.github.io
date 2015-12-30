@@ -1,6 +1,10 @@
-<a href="<script>encodeURI('https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=jamolnng');</script>" 
-   target="_blank">
-  Share on Twitter</a> 
-or 
-<a href="https://twitter.com/jamolnng">
-  follow me on Twitter</a>!
+<script>
+
+function twp(v)
+{
+	return encodeURI(v)
+}
+
+</script>
+
+<a href="twp(https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}&via=jamolnng);" target="_blank"> Share on Twitter</a> or <a href="https://twitter.com/jamolnng"> follow me on Twitter</a>!
