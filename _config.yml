@@ -10,6 +10,7 @@ tagline:             Physicist, Programmer, Walrus
 url:                 http://jlaning.com
 paginate:            5
 baseurl:             ""
+include:			 [tags/OpenCL]
 
 # Assets
 #
