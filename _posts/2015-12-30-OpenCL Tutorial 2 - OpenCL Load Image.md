@@ -7,7 +7,7 @@ tags: [opencl, tutorials, cpp]
 In this tutorial we are going to copy an image using OpenCL.
 
 Before we start make sure you download the PNG.h header available in the include and includes on the project's [GitHub page](https://github.com/jamolnng/OpenCL-CUDA-Tutorials) it in your project. We use this to load and save PNGs.
-
+<br/><br/>
 1) We need to create the OpenCL context. This is explained a bit more in depth in the first tutorial.
 
 {% highlight cpp %}
@@ -28,7 +28,7 @@ int main(int arg, char* args[])
 	cl::Context context(device);
 	//...
 {% endhighlight %}
-
+<br/><br/>
 2) Now we need to load our image from file and into OpenCL
 
 Loading our image is pretty simple. Lenna.png is available in the project files on the project's GitHub page.
@@ -56,9 +56,11 @@ inPng.Free();
 {% endhighlight %}
 
 format describes how the image is formatted in memory
-CL_MEM_READ_ONLY says that the memory will not be modified by the OpenCL implementation
-CL_MEM_COPY_HOST_PTR is set so OpenCL copies the image data from the host to the OpenCL implementation
 
+CL_MEM_READ_ONLY says that the memory will not be modified by the OpenCL implementation
+
+CL_MEM_COPY_HOST_PTR is set so OpenCL copies the image data from the host to the OpenCL implementation
+<br/><br/>
 3) Create out output image
 
 This is similar to creating the input image except we do not need to send any data to the OpenCL implementation
@@ -67,7 +69,7 @@ This is similar to creating the input image except we do not need to send any da
 //output image
 cl::Image2D out(context, CL_MEM_WRITE_ONLY, format, w, h, 0, NULL);
 {% endhighlight %}
-
+<br/><br/>
 4) Create out kernel, this is explained in the first tutorial
 
 {% highlight cpp %}
@@ -89,7 +91,7 @@ cl::Kernel kernelCopy(program, "copy");
 kernelCopy.setArg(0, in);
 kernelCopy.setArg(1, out);
 {% endhighlight %}
-
+<br/><br/>
 5) Create command queue and execute our kernel
 
 {% highlight cpp %}
@@ -118,7 +120,7 @@ void kernel copy(__read_only image2d_t in, __write_only image2d_t out)
 	write_imageui(out, pos, pixel);
 }
 {% endhighlight %}
-
+<br/><br/>
 6) Read our image back from the OpenCL implementation
 
 {% highlight cpp %}
@@ -153,22 +155,5 @@ outPng.Free();
 //free the temp array
 delete[] tmp;
 {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Sources for all of the tutorials can be found at the projects github [https://github.com/jamolnng/OpenCL-CUDA-Tutorials](https://github.com/jamolnng/OpenCL-CUDA-Tutorials)
