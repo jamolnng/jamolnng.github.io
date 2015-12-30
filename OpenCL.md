@@ -3,7 +3,7 @@ layout: page
 title: OpenCL
 ---
 
-{% if site.tags.{{ page.title }} != empty %}
+{% if site.tags.OpenCL != empty %}
 <div class="posts">
   {% for post in site.tags.OpenCL %}
   <article class="post">
