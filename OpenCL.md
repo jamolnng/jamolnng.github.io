@@ -5,7 +5,7 @@ title: OpenCL
 
 {% if site.tags.{{ page.title }} != empty %}
 <div class="posts">
-  {% for post in site.categories["OpenCL"] %}
+  {% for post in site.tags.OpenCL %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
