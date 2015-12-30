@@ -10,20 +10,8 @@ title: Home
 {% include indexpostitem.html %}
 {% endfor %}
           </div><!--/row-->
-          <div class="row hidden-phone spacer50"></div>
-          <div class="row">
-{% for post in site.posts limit: 3 offset: 3 %}
-{% include indexpostitem.html %}
-{% endfor %}
-          </div><!--/row-->
-          <div class="row hidden-phone spacer50"></div>
-          <div class="row">
-{% for post in site.posts limit: 3 offset: 6 %}
-{% include indexpostitem.html %}
-{% endfor %}
-          </div><!--/row-->
 
           <div class="row hidden-phone spacer50"></div>
           <div class="row visible-phone spacer25"></div>
 
-          <a href="/archive/">more posts</a>
+          <a href="/blog/">more posts</a>
