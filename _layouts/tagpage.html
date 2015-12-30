@@ -2,7 +2,14 @@
 layout: default
 ---
 
-<h1>{{ page.tag }}</h1>
+{% for data_tag in site.data.tags %}
+	{% if data_tag.slug == page.tag %}
+		{% assign tag = data_tag %}
+	{% endif %}
+{% endfor %}
+{% if tag %}
+	<h1>{{ tag.name }}</h1>
+{% endif %}
 
 <ul>
 {% for post in site.tags[page.tag] %}
