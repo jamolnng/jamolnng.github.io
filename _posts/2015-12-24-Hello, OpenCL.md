@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Hello, OpenCL
-tags:
-- OpenCL
-- code
-- tutorials
+tag: OpenCL
 ---
 
 This is the beginning of what I plan to be a tutorial/introductory series to OpenCL using the C++ bindings.
