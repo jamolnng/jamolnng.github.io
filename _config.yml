@@ -12,7 +12,7 @@ tagline:             Physicist, Programmer, Walrus
 url:                 http://jlaning.com
 paginate:            5
 baseurl:             ""
-paginate_path: '/tag/:num'
+paginate_path: '/blog/:num'
 
 # Assets
 #
