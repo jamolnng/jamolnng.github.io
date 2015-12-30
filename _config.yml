@@ -36,4 +36,5 @@ github:
 pages_list:       
   About: '/about'
   Projects: '/projects'
+  Tags: '/tags'
   Feed: '/atom.xml'
