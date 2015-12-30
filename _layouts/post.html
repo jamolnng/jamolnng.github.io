@@ -37,6 +37,8 @@ layout: default
 
 <p id="post-meta">{{ tags_content }}</p>
 
+{% include twitter_plug.html %}
+
 {% if site.related_posts != empty %}
 <aside class="related">
   <h2>Related Posts</h2>
@@ -54,5 +56,3 @@ layout: default
   </ul>
 </aside>
 {% endif %}
-
-{% include twitter_plug.html %}
