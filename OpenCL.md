@@ -3,9 +3,9 @@ layout: page
 title: OpenCL
 ---
 
-{% if site.tags[title] != empty %}
+{% if site.tags.OpenCL != empty %}
 <div class="posts">
-  {% for post in site.tags[title] %}
+  {% for post in site.tags.OpenCL %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
