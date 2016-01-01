@@ -10,6 +10,7 @@ title: Home
           <div class="row">
 {% for post in site.posts limit: 3 %}
 {% include indexpostitem.html %}
+{% include tags.html %}
 <hr/>
 {% endfor %}
           </div><!--/row-->
