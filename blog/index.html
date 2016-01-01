@@ -15,7 +15,6 @@ title: Blog
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
     {{ post.content }}
-	
 	{% assign post = page %}
 	{% if post.tags.size > 0 %}
 		{% capture tags_content %}Tags {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
@@ -33,7 +32,6 @@ title: Blog
 	{% else %}
 		{% assign tags_content = '' %}
 	{% endif %}
-
 	<p id="post-meta">{{ tags_content }}</p>
   </article>
   <hr/>
