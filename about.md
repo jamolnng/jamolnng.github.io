@@ -33,9 +33,7 @@ My Current Computer Build:
 
 Contact Info:
 
-Office: 316 Cardwell Hall, Kansas State University, Manhattan, KS 66506. However that is only if you want to meet in person, please do not mail anything to it. And email me first because I am almost never in there.
-
-Email: <script>makeMail("jlaning", "phys.ksu.edu");</script>
+Email: <script>makeMail("contact", "jlaning.com");</script>
 
 Twitter: <a href="https://twitter.com/jamolnng">@jamolnng</a>
 
