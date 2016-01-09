@@ -15,7 +15,7 @@ A box filter is a linear filter where it averages the value of a pixel with itse
 The method I implemented using the sliding window algorithm but there are other ways to speed it up. If you are interested here is [a presentation pdf](http://web.archive.org/web/20060718054020/http://www.acm.uiuc.edu/siggraph/workshops/wjarosz_convolution_2001.pdf) on it.
 
 Here is an example using a 11x11 filter
-![11x11 filter](http://jlaning.com/public/OpenCL image filtering/filter.png)
+![11x11 filter](http://jlaning.com/public/assets/OpenCL image filtering/filter.png)
 
 To implement the filter we need to iterate over every pixel that is going to be read
 {% highlight cpp %}
