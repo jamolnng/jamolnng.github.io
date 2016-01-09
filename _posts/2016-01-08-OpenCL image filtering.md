@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenCL basic image filtering
+title: OpenCL image filtering
 tags: [opencl, tutorials, cpp]
 ---
 
