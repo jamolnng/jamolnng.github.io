@@ -4,7 +4,7 @@
 #permalink:           pretty
 #relative_permalinks: true
 
-permalink: /post/:year-:month-:day/:title/
+permalink: /post/:year/:month/:day/:title/
 
 # Setup
 title:               Jesse Laning
