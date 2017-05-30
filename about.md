@@ -1,42 +1,28 @@
 ---
 layout: page
-title: About
+permalink: /about/index.html
+title: About the Theme
+tagline: HMFAYSAL V2, a Jekyll Theme
+tags: [about, Jekyll, theme, responsive]
+modified: 9-9-2013
+image:
+  feature: texture-feature-02.jpg
+  credit: Texture Lovers
+  creditlink: http://texturelovers.com
 ---
 
-<script type="text/javascript">
-function makeMail(lhs,rhs)
-{
-	document.write("<a href=\"mailto");
-	document.write(":" + lhs + "@");
-	document.write(rhs + "\">" + lhs + "@" + rhs + "<\/a>");
-}
-</script>
+My name is **Hossain Mohd. Faysal**, I am an MSc + PhD candidate in *Electrical Engineering* at the [School of Engineering and Applied Science](http://www.seas.upenn.edu/) at **University of Pennsylvania**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I graduated with a B.Sc degree in EECS from Texas A&M University in 2011 and with a B.Sc degree in Mathematics from Massachusetts Institute of Technology in 2012, and currently focusing on Electrical Engineering for my post-graduate studies.   
 
-I am Jesse Laning, I live in the Little Apple, Manhattan, Kansas. I have loved computers since the day I was born. Ever since I got my first computer as a child I have been tinkering with them non stop. I am currently working on my degree in Physics and Software Engineering at Kansas State University. While I have been programming for almost eight years, physics is my life and am currently doing physics research. My favorite pass time is toying around with OpenGL and hopefully soon, Vuklan.
+---
+Jekyll is pretty rad and figured releasing a cleaned up version of [my site](http://www.theevilgenius.tk) as a theme for others to hack and build on would be fun. So here be that theme --- I call it **HMFAYSAL V2**, a responsive Jekyll theme with a navigation drawer, large featured images and solid typography. 
 
+## HMFAYSAL V2 is all about:
 
-The research I'm involved in, under the leadership of Dr. Amit Chakrabarti, is using the well known Mie solution to Maxwell's equations to understand how the internal fields of spheres affects the development of the scattered fields. Once we gain an understanding of how this works then the same techniques can be applied to irregular shaped particles by using a Discrete Dipole Approximation to light scattering. My task at the moment is to massively parallelize our existing computational code using mutli-cpu or multi-gpu platforms using OpenMP or OpenCL or NVIDIA CUDA (we haven't decided yet).
+* Responsive templates. Features a slide out drawer menu in mobile browsers.
+* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
+* Minimal embellishments --- content first.
+* Large feature images for posts and pages.
+* Author sidebar to pimp your bio, photo[^2], and social media links.
+* Simple and clear permalink structure *(ie: domain.com/category/post-title)*
 
-
-My eight years of programming experience include programming with C/C++, C#, Java, JavaScript, Python, and Lua. What I normally work with, and am most proficient at, is C/C++. I just love to write programs with it and mess around. I especially love using it with OpenGL. I have created my own versions of an OpenGL C++ wrapper, although it is very basic. I am currently working on a game engine using C++ (with SDL) and OpenGL. Graphics cards are just magical pieces of technology that I love to toy with.
-
-
-My Current Computer Build:
-<ul>
-	<li>Intel i7 4790k</li>
-	<li>MSI Twin Frozr GTX 980ti</li>
-	<li>Gigabyte GA-Z97X-GAMING 7</li>
-	<li>Corsair Vengeance Pro 16GB (2 x 8GB) DDR3-2400</li>
-	<li>NZXT S340 (Black)</li>
-	<li>Windows 10</li>
-</ul>
-
-Contact Info:
-
-Email: <script>makeMail("contact", "jlaning.com");</script>
-
-Twitter: <a href="https://twitter.com/jamolnng">@jamolnng</a>
-
-<a href="https://github.com/jamolnng">Github</a>
-
-<a href="https://stackoverflow.com/users/1561291/jamolnng">StackOverflow</a>
+<a markdown="0" href="{{ site.url }}/technical-details" class="btn">Technical Details</a>
