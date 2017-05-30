@@ -4,19 +4,9 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>I'm a Junior at Kansas State University majoring in Physics and Computer Science. I've spend the last 10+ years teaching myself how to program, mainly with C and C++. During those years I have done everything from command line programs to trying my hand at game making.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>I have been an employee of the Department of Physics at Kansas State University for over a year and a half now. I am working with professors Chris Sorensen and Matt Berg on theoretical and experimental studies of light scatting by particles of arbitrary shape and size.</p>
 
 <h2>Skills</h2>
 
@@ -25,6 +15,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<li>Java</li>
 	<li>PHP</li>
 	<li>MySQL</li>
+	<li>Parallel Computing</li>
 	<li>AVR Microcontrollers</li>
 	<li>Raspberry Pi</li>
 	<li>Linux CLI</li>
