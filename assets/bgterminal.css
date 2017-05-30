@@ -1,0 +1,50 @@
+@keyframes glow {
+	0% {color: rgba(50,250,50,0.1);}
+	25% {color: rgba(50,250,50,0.2);}
+	50% {color: rgba(50,250,50,0.1);}
+	100% {color: rgba(50,250,50,0.1);}
+}
+
+@-webkit-keyframes glow {
+	0% {color: rgba(50,250,50,0.1);}
+	25% {color: rgba(50,250,50,0.2);}
+	50% {color: rgba(50,250,50,0.1);}
+	100% {color: rgba(50,250,50,0.1);}
+}
+
+.bgterminal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	color: rgba(50,250,50,0.1);
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	font-family: monospace;
+	font-size: 16px;
+	z-index: 0;
+	text-align: left;
+	-webkit-transition-property: color;
+	-moz-transition-property: color;
+	-o-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 2s;
+	transition-duration: 2s;
+	-webkit-transition-delay: 2s;
+	transition-delay: 0;
+}
+
+.bgterminal-glow {
+	animation: glow 5s;
+	-webkit-animation: glow 5s;
+	animation-direction: normal;
+	-webkit-animation-direction: normal;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.bgterminal .cursor {
+	background: rgba(50, 250, 50, 0.3);
+}

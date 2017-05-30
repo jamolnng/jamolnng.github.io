@@ -18,15 +18,30 @@ layout: compress
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
+	
+	<link href="bgterminal.css" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.bgterminal.min.js"></script>
 
     <style>
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
+	
+	<script>
+	$(document).ready(function(){
+	$('#terminal').bgTerminal({
+	url: 'demo.html', // The page to load and display in the terminal
+	glow: true, // If true, the terminal will have a glowing effect
+	speed: 100, // Type speed in milliseconds. This is the time between two character are typed	
+	wait: 1000 // The number of milliseconds to wait at the end of the line (when \n is found)
+	});
+	});
+	</script>
 
 </head>
 <body>
-
+	<div id="terminal"></div>
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
