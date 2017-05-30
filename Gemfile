@@ -1,6 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-minibundle'
-gem 'coderay'
-gem 'rake'
+gem 'github-pages'
+gem 'html-proofer'
