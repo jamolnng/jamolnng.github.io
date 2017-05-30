@@ -30,7 +30,7 @@ layout: compress
 
 </head>
 <body>
-	<div id="terminal"></div>
+	<div id="terminal">
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
@@ -47,7 +47,7 @@ layout: compress
     </div>
 
     {% include icons.html %}
-	
+	</div>
 	<script>
 	$(document).ready(function(){
 	$('#terminal').bgTerminal({
