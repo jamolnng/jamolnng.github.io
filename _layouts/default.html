@@ -30,8 +30,6 @@ layout: compress
 
 </head>
 <body>
-	<div id="terminal">
-    </div>
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
@@ -45,7 +43,7 @@ layout: compress
 
             {{ content }}
     </div>
-
+	<div id="terminal"></div>
     {% include icons.html %}
 	</div>
 	<script>
