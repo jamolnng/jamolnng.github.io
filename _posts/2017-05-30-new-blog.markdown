@@ -1,0 +1,9 @@
+---
+title: "Blog Update"
+layout: post
+date: 2017-05-30
+headerImage: false
+tag: blog-update
+category: blog
+author: jesselaning
+description: Blog Update
