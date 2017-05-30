@@ -7,3 +7,6 @@ tag: blog-update
 category: blog
 author: jesselaning
 description: Blog Update
+---
+
+I have updated the theme to my blog and will hopefully keep it more updated than I have been (but probably not). I will try to add more posts along with using it as sort of an online portfolio.
