@@ -13,12 +13,13 @@ layout: page
 <ul class="skill-list">
 	<li>C/C++</li>
 	<li>Java</li>
+	<li>Parallel Computing</li>
+	<li>AVR Microcontrollers (Arduino)</li>
+	<li>Linux CLI</li>
+	<li>Raspberry Pi</li>
+	<li>Assembly</li>
 	<li>PHP</li>
 	<li>MySQL</li>
-	<li>Parallel Computing</li>
-	<li>AVR Microcontrollers</li>
-	<li>Raspberry Pi</li>
-	<li>Linux CLI</li>
 </ul>
 
 <h2>Projects</h2>
