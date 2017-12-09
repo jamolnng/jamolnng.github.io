@@ -1,5 +1,5 @@
 ---
-title: "Open source hardware watch"
+title: "Open Source Smart Watch"
 layout: post
 date: 2017-12-09
 headerImage: false
@@ -8,7 +8,7 @@ category: project
 hidden: true
 projects: true
 author: jesselaning
-description: Open source hardware watch
+description: Open Source Smart Watch
 ---
 
 The original inspiration for this project came from Jared Sanson here http://jared.geek.nz/2014/jul/oshw-oled-watch
