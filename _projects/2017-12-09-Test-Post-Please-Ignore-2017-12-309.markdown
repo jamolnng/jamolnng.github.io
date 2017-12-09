@@ -1,12 +1,12 @@
 ---
-title: "Blog Update 2017-05-30"
+title: "Test post please ignore"
 layout: post
-date: 2017-05-30
+date: 2017-12-09
 headerImage: false
-tag: blog-update
-category: blog
+tag: project
+category: project
 author: jesselaning
-description: Blog Update 2017-05-30
+description: Test post please ignore
 ---
 
-I have updated the theme to my blog and will hopefully keep it more updated than I have been (but probably not). I will try to add more posts along with using it as sort of an online portfolio.
+Test post please ignore
