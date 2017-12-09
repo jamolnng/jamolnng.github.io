@@ -3,8 +3,9 @@ title: "Test post please ignore"
 layout: post
 date: 2017-12-09
 headerImage: false
-tag: projects
-category: projects
+tag: project
+category: project
+projects: true
 author: jesselaning
 description: Test post please ignore
 ---
