@@ -2,7 +2,8 @@
 title: "Open Source Smart Watch"
 layout: post
 date: 2017-12-09
-headerImage: false
+image: http://jlaning.com/assets/images/projects/Smart-Watch/oshw-logo-800-px.png
+headerImage: true
 tag: project
 category: project
 hidden: true
