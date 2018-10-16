@@ -47,9 +47,11 @@ layout: compress
 	</div>
 	<div id="terminal" style="z-index:-999;color: rgba(0,122,204,0.2);"></div>
 	<script>
+	var docs = ['https://raw.githubusercontent.com/jamolnng/WebServer/master/WebServerCommon/site.cpp', 
+				'https://raw.githubusercontent.com/jamolnng/WebServer/master/WebServer/webserver.cpp'
 	$(document).ready(function(){
 	$('#terminal').bgTerminal({
-	url: 'https://raw.githubusercontent.com/torvalds/linux/master/kernel/cpu.c',
+	url: docs[Math.round(Math.random())],
 	glow: true,
 	speed: 40,
 	wait: 400
