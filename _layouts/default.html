@@ -32,12 +32,12 @@ layout: compress
 <body>
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
-            <div class="post" style="padding:50px;padding-top:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
+            <div class="post" style="padding:50px;padding-top:15px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
         {% else %}
             {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}" style="padding:50px;padding-top:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
+                <div class="page {{ page.title | downcase }}" style="padding:50px;padding-top:15px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
             {% else %}
-                <div class="{{ page.title | downcase }}" style="padding:50px;padding-top:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
+                <div class="{{ page.title | downcase }}" style="padding:50px;padding-top:15px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
             {% endif %}
         {% endif %}
 
