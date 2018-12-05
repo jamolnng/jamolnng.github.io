@@ -48,8 +48,8 @@ layout: compress
 	<div id="terminal" style="z-index:-999;color: rgba(0,122,204,0.2);"></div>
 	<script>
     var code_arr = ['https://raw.githubusercontent.com/jamolnng/argparse/master/argparse.h',
-                    'https://raw.githubusercontent.com/torvalds/linux/master/kernel/cpu.c']
-    var code = code = code_arr[Math.floor(Math.random() * code_arr.length)]
+                    'https://raw.githubusercontent.com/torvalds/linux/master/kernel/cpu.c'];
+    var code = code = code_arr[Math.floor(Math.random() * code_arr.length)];
 	$(document).ready(function(){
 	$('#terminal').bgTerminal({
 	url: code,
