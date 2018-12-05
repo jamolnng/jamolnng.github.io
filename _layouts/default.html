@@ -31,18 +31,20 @@ layout: compress
 </head>
 <body>
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+        <span style="padding:50px;padding-top:50px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;">
         {% if page.tag %}
-            <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="post">
+            <div class="post">
         {% else %}
             {% if showHeader != true %}
-                <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="page {{ page.title | downcase }}">
+                <div class="page {{ page.title | downcase }}">
             {% else %}
-                <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="{{ page.title | downcase }}">
+                <div class="{{ page.title | downcase }}">
             {% endif %}
         {% endif %}
 
             {{ content }}
     </div>
+    </span>
     {% include icons.html %}
 	</div>
 	<div id="terminal" style="z-index:-999;color: rgba(0,122,204,0.2);"></div>
