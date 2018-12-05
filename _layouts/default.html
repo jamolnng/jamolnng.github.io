@@ -30,14 +30,14 @@ layout: compress
 
 </head>
 <body>
-    <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
-            <div class="post">
+            <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="post">
         {% else %}
             {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
+                <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="page {{ page.title | downcase }}">
             {% else %}
-                <div class="{{ page.title | downcase }}">
+                <div style="padding:10px;background-color:#FFFFFF;box-shadow:0px 0px 10px 0px #CCCCCC;" class="{{ page.title | downcase }}">
             {% endif %}
         {% endif %}
 
