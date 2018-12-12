@@ -2,27 +2,27 @@
 title: About
 layout: page
 ---
-<p>I'm a Junior at Kansas State University majoring in Physics and Computer Science. I've spend the last 10+ years teaching myself how to program, mainly with C and C++. During those years I have done everything from command line programs to trying my hand at game making. My main passion is physics and using my programming skill I have gotten into computational physics, working on speeding up calculations with parallel processing. Recently I jumped into the more hands on experimental side of physics.</p>
-
-<p>I have been an employee of the Department of Physics at Kansas State University for over a year and a half now, with a part time job at Baskin Robbin's thrown in there for six months. I am working with professors Chris Sorensen and Matt Berg on theoretical and experimental studies of light scatting by particles of arbitrary shape and size.</p>
-
-<h2>Skills</h2>
-
-<ul class="skill-list">
-	<li>C/C++</li>
-	<li>Java</li>
-	<li>Parallel Computing</li>
-	<li>AVR Microcontrollers (Arduino)</li>
-	<li>Linux CLI</li>
-	<li>Raspberry Pi</li>
-	<li>Assembly</li>
-	<li>PHP</li>
-	<li>MySQL</li>
-</ul>
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/jamolnng/SDL2_Application">SDL2_Application</a></li>
-	<li><a href="https://github.com/jamolnng/OpenCL-CUDA-Tutorials">OpenCL &amp; CUDA Tutorials</a></li>
-</ul>
+<p>
+	I'm a Senior at Kansas State University majoring in Physics with minors in Computer Science and Mathematics. I started teaching myself programming when I was 11 and have not stopped since then and discovered my love for physics along the way. I have worked in the fields of scientific computing (Kansas State University), mission critical software testing (The Charles Stark Draper Laboratory, Inc.), and applied optics and instrument design (Kansas State University). Currently I am a research assistant for <a href="https://sites.google.com/site/emscattering/">Matt Berg, a professor at Kansas State University</a>. My work consists of two different jobs:
+	<ul>
+		<li>Hardware and software development for an instrument to image large aerosol particles from an unmanned aerial vehicle.</li>
+		<li>Applied optics research in digital holographic imaging of aerosol particles.</li>
+	</ul>
+</p>
+<p>
+	<h2>Personal Projects</h2>
+	<ul>
+		<li><a href="https://jlaning.com/Open-Source-Smart-Watch/">Open Source Smart Watch (on hold)</a></li>
+		<li><a href="https://github.com/jamolnng/WebServer">Lightweight C++ web server</a></li>
+		<li><a href="https://github.com/jamolnng/argparse">Header only C++ command line argument parser</a></li>
+		<li><a href="https://github.com/jamolnng/SDL2_Application">SDL2_Application (abandoned)</a></li>
+		<li><a href="https://github.com/jamolnng/OpenCL-CUDA-Tutorials">OpenCL &amp; CUDA Tutorials (abandoned)</a></li>
+	</ul>
+</p>
+<p>
+	<h2>Research</h2>
+	You can view my research group's website here: <a 	href="https://sites.google.com/site/emscattering/">https://sites.google.com/site/emscattering/</a>
+</p>
+<p>
+	<h2><a href="https://jlaning.com/resume/">Résumé</a></h2>
+</p>
