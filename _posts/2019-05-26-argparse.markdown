@@ -14,6 +14,8 @@ description: argparse.h
 
 A simple, lightweight, header only, C++11 command line argument parser. Loosly compatible with the python standard library argparse.
 
+You can follow the project's Github page [here](https://github.com/jamolnng/argparse)
+
 ## Usage
 Here is a simple example
 
