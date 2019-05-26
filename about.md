@@ -10,18 +10,26 @@ layout: page
 	</ul>
 </p>
 <p>
-	<h2>Personal Projects</h2>
-	<ul>
-		<li><a href="https://jlaning.com/Open-Source-Smart-Watch/">Open Source Smart Watch (on hold)</a></li>
-		<li><a href="https://github.com/jamolnng/WebServer">Lightweight C++ web server</a></li>
-		<li><a href="https://github.com/jamolnng/argparse">Header only C++ command line argument parser</a></li>
-		<li><a href="https://github.com/jamolnng/SDL2_Application">SDL2_Application (abandoned)</a></li>
-		<li><a href="https://github.com/jamolnng/OpenCL-CUDA-Tutorials">OpenCL &amp; CUDA Tutorials (abandoned)</a></li>
-	</ul>
 </p>
 <p>
 	<h2>Research</h2>
-	You can view my research group's website here: <a 	href="https://sites.google.com/site/emscattering/">https://sites.google.com/site/emscattering/</a>
+	You can view my research group's website here: <a href="https://sites.google.com/site/emscattering/">https://sites.google.com/site/emscattering/</a>
+</p>
+<p>
+	<h2>Publications</h2>
+	<ul>
+		<li>Soon... very soon</li>
+	</ul>
+</p>
+<p>
+	<h2>Personal Projects</h2>
+	<ul>
+		<li><a href="https://github.com/jamolnng/argparse">Header only C++ command line argument parser</a></li>
+		<li><a href="https://jlaning.com/Open-Source-Smart-Watch/">Open Source Smart Watch (on hold)</a></li>
+		<li><a href="https://github.com/jamolnng/WebServer">Lightweight C++ web server</a></li>
+		<li><a href="https://github.com/jamolnng/SDL2_Application">SDL2_Application (abandoned)</a></li>
+		<li><a href="https://github.com/jamolnng/OpenCL-CUDA-Tutorials">OpenCL &amp; CUDA Tutorials (abandoned)</a></li>
+	</ul>
 </p>
 <p>
 	<h2><a href="https://jlaning.com/resume/">Résumé</a></h2>
