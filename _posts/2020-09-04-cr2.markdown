@@ -1,5 +1,5 @@
 ---
-title: "argparse.h"
+title: "cr2"
 layout: post
 date: 2019-05-26
 image: 
@@ -9,7 +9,7 @@ category: project
 hidden: true
 projects: true
 author: jesselaning
-description: argparse.h
+description: RISCV RTOS in C
 ---
 [# cr2](https://github.com/jamolnng/cr2)
 C RISCV RTOS
