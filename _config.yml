@@ -35,14 +35,14 @@ disqus:
   categories: # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: jesse.laning
-twitter: jamolnng
+# facebook: jesse.laning
+# twitter: jamolnng
 # google: mygoogle
-instagram: thejesselaning
+# instagram: thejesselaning
 # pinterest: mypinterest
 linkedin: jesse-laning-13a797155
 # youtube: myyoutube
-spotify: jelaning
+# spotify: jelaning
 github: jamolnng
 # lastfm: mylastfm
 stackoverflow: 1561291/jesse-laning
